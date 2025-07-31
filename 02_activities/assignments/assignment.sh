@@ -13,8 +13,6 @@ if [ -d newproject ]; then
   echo "Directory 'newproject' already exists. Please remove it before running this script."
   exit 1
 fi
-# go to the assignments directory - added by me
-cd ~/dsi_day2/shell/02_activities/assignments
 mkdir newproject
 cd newproject
 
@@ -30,7 +28,6 @@ unzip -q rawdata.zip
 # Complete assignment here
 
 # 1. Create a directory named data
-cd ~/dsi_day2/shell/02_activities/assignments/newproject
 mkdir data
 # 2. Move the ./rawdata directory to ./data/raw
 mv rawdata data/raw
